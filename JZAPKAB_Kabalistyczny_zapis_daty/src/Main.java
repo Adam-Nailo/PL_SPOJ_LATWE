@@ -7,17 +7,34 @@ import java.io.InputStreamReader;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
-        String[][] szyfr = {{"a", "1"}, {"b", "2"}, {"c", "3"}, {"d", "4"}, {"e", "5"}, {"f", "6"}, {"g", "7"}, {"h", "8"}, {"i", "9"}, {"k", "10"}, {"l", "20"}, {"m", "30"}, {"n", "40"}, {"o", "50"}, {"p", "60"}, {"q", "70"}, {"r", "80"}, {"s", "90"}, {"t", "100"}, {"v", "200"}, {"x", "300"}, {"y", "400"}, {"z", "500"}};
         int liczba = 0;
         String slowo;
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         slowo = bufferedReader.readLine();
         for (int i = 0; i < slowo.length(); i++) {
-            for (int j = 0; j < szyfr.length; j++) {
-                if (slowo.charAt(i) == szyfr[j][0].charAt(0)) {
-                    liczba += Integer.parseInt(szyfr[j][1]);
-                }
-            }
+            if (slowo.charAt(i) == 'a') liczba += 1;
+            if (slowo.charAt(i) == 'b') liczba += 2;
+            if (slowo.charAt(i) == 'c') liczba += 3;
+            if (slowo.charAt(i) == 'd') liczba += 4;
+            if (slowo.charAt(i) == 'e') liczba += 5;
+            if (slowo.charAt(i) == 'f') liczba += 6;
+            if (slowo.charAt(i) == 'g') liczba += 7;
+            if (slowo.charAt(i) == 'h') liczba += 8;
+            if (slowo.charAt(i) == 'i') liczba += 9;
+            if (slowo.charAt(i) == 'k') liczba += 10;
+            if (slowo.charAt(i) == 'l') liczba += 20;
+            if (slowo.charAt(i) == 'm') liczba += 30;
+            if (slowo.charAt(i) == 'n') liczba += 40;
+            if (slowo.charAt(i) == 'o') liczba += 50;
+            if (slowo.charAt(i) == 'p') liczba += 60;
+            if (slowo.charAt(i) == 'q') liczba += 70;
+            if (slowo.charAt(i) == 'r') liczba += 80;
+            if (slowo.charAt(i) == 's') liczba += 90;
+            if (slowo.charAt(i) == 't') liczba += 100;
+            if (slowo.charAt(i) == 'v') liczba += 200;
+            if (slowo.charAt(i) == 'x') liczba += 300;
+            if (slowo.charAt(i) == 'y') liczba += 400;
+            if (slowo.charAt(i) == 'z') liczba += 500;
         }
         System.out.println(liczba);
     }
