@@ -28,7 +28,7 @@ public class Main {
             while (stringTokenizer.hasMoreElements()){
                 liczby.add(stringTokenizer.nextToken());
             }
-            if ()
+
         }
     }
 }
